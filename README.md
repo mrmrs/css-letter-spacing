@@ -23,19 +23,19 @@ or download the css on github and include in your project.
 .tracked-tight { letter-spacing: -.1em; }
 .mega-tracked  { letter-spacing:  .2em; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .tracked-ns       { letter-spacing:  .1em; }
   .tracked-tight-ns { letter-spacing: -.1em; }
   .mega-tracked-ns  { letter-spacing:  .2em; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .tracked-m       { letter-spacing:  .1em; }
   .tracked-tight-m { letter-spacing: -.1em; }
   .mega-tracked-m  { letter-spacing:  .2em; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .tracked-l       { letter-spacing:  .1em; }
   .tracked-tight-l { letter-spacing: -.1em; }
   .mega-tracked-l  { letter-spacing:  .2em; }
