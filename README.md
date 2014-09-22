@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-letter-spacing)
 ## File Size
 
 713B letter-spacing.css
-551B letter-spacing.min.css
+551B letter-spacing.min.css 
+167B minified and gzipped
 
 ## The Code
 ```
