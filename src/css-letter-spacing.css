@@ -7,9 +7,9 @@
 .mega-tracked  { letter-spacing:  .2em; }
 
 @media screen and (min-width: 48em) {
-  .tracked-ns       { letter-spacing:  .1em; }
-  .tracked-tight-ns { letter-spacing: -.1em; }
-  .mega-tracked-ns  { letter-spacing:  .2em; }
+  .tracked-s       { letter-spacing:  .1em; }
+  .tracked-tight-s { letter-spacing: -.1em; }
+  .mega-tracked-s  { letter-spacing:  .2em; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {
