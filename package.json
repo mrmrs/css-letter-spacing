@@ -1,38 +1,44 @@
 {
   "name": "css-letter-spacing",
-  "style": "letter-spacing.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-letter-spacing",
-  "description": "Css module of single purpose classes for letter spacing",
+  "version": "2.0.0",
+  "description": "Functional CSS for letter-spacing",
+  "style": "dist/letter-spacing.css",
+  "main": "dist/letter-spacing.css",
+  "exports": {
+    ".": "./dist/letter-spacing.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "letter-spacing"
+    "letter-spacing",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-letter-spacing": {
+  "homepage": "https://github.com/mrmrs/css-letter-spacing",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-letter-spacing.git"
+    "url": "https://github.com/mrmrs/css-letter-spacing.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-letter-spacing/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-letter-spacing/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
